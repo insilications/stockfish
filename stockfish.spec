@@ -5,7 +5,7 @@
 %define keepstatic 1
 Name     : stockfish
 Version  : 5
-Release  : 6
+Release  : 7
 URL      : file:///insilications/build/clearlinux/packages/stockfish/stockfish-5.tar.gz
 Source0  : file:///insilications/build/clearlinux/packages/stockfish/stockfish-5.tar.gz
 Summary  : No detailed summary available
@@ -39,7 +39,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1610897393
+export SOURCE_DATE_EPOCH=1610899341
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -72,7 +72,7 @@ popd
 
 
 %install
-export SOURCE_DATE_EPOCH=1610897393
+export SOURCE_DATE_EPOCH=1610899341
 rm -rf %{buildroot}
 pushd src
 %make_install PREFIX=%{buildroot}/usr
