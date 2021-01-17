@@ -1,1 +1,1 @@
-V=1 VERBOSE=1 profile-build ARCH=x86-64-avx2 COMP=gcc
+profile-build ARCH=x86-64-avx2 COMP=gcc COMPCXX=g++ V=1 VERBOSE=1
